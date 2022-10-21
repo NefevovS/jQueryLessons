@@ -1,34 +1,55 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8">
-<title>Привет, Мир</title>
-<link href="../_css/jquery-ui.min.css" rel="stylesheet">
-<link href="../_css/site.css" rel="stylesheet">
-<script src="../_js/jquery.min.js"></script>
-<script src="../_js/jquery-ui.min.js"></script>
-<script>
-$(document).ready(function() {
- 
-}); // end ready
-</script>>
-</head>
-<body>
-<div class="wrapper">
-	<header>
-		JAVASCRIPT <span class="amp">и</span> jQUERY: НЕДОСТАЮЩЕЕ&nbsp;РУКОВОДСТВО
-	</header>
-	<div class="content">
-		<div class="main">
-			<h1>Привет, Мир</h1>
-			<p>Обратите внимание на то, что это диалоговое окно выглядит гораздо лучше, чем оповещение!</p>
-<!-- Добавьте тег <div> диалогового окна здесь -->
+  <head>
+    <meta charset="UTF-8" />
+    <title>Привет, Мир</title>
+    <link href="../_css/jquery-ui.min.css" rel="stylesheet" />
+    <link href="../_css/site.css" rel="stylesheet" />
+    <script src="../_js/jquery.min.js"></script>
+    <script src="../_js/jquery-ui.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#hello").dialog({
+          draggable: false,
+          resizable: false,
+          width: 600,
+          height: 600,
+          modal: true,
+          show: "explode",
+          hide: "explode",
+        });
+      }); // end ready
+    </script>
+    >
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        JAVASCRIPT <span class="amp">и</span> jQUERY:
+        НЕДОСТАЮЩЕЕ&nbsp;РУКОВОДСТВО
+      </header>
+      <div class="content">
+        <div class="main">
+          <h1>Привет, Мир</h1>
+          <p>
+            Обратите внимание на то, что это диалоговое окно выглядит гораздо
+            лучше, чем оповещение!
+          </p>
+          <!-- Добавьте тег <div> диалогового окна здесь -->
 
-		</div>
-	</div>
-	<footer>
-		 <p>JavaScript и jQuery: Недостающее Руководство, Дэвид МакФарланд.</p>
-	</footer>
-</div>
-</body>
+          <div id="hello" title="Привет мир">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
+              laborum laudantium rerum perferendis commodi aliquid eos quis
+              tenetur voluptatum quisquam facilis expedita quasi at corporis,
+              accusamus similique voluptatem ullam incidunt?
+            </p>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <p>JavaScript и jQuery: Недостающее Руководство, Дэвид МакФарланд.</p>
+      </footer>
+    </div>
+  </body>
 </html>
